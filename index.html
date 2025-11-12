@@ -1,1 +1,94 @@
-test
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santa Rita · Art i Acció Social</title>
+  <meta name="description" content="Santa Rita és una associació sense ànim de lucre a Sabadell. Reutilització, botiga solidària, tallers i redonacions.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" as="image" href="assets/img/santarita-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Inici Santa Rita">
+        <img src="assets/img/santarita-logo.png" alt="Logo de Santa Rita" width="160" height="160">
+      </a>
+      <nav aria-label="Principal" class="nav">
+        <a href="#que-es">Com funciona</a>
+        <a href="#donacions">Donacions</a>
+        <a href="#contacte">Contacte</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Santa Rita · Art i Acció Social</h1>
+      <p class="lead">
+        Les donacions són l’origen de tot el que passa a Santa Rita. Sense elles, res circula.
+        El nostre objectiu sempre serà reutilitzar abans que reciclar.
+      </p>
+      <a class="btn" href="#donacions">Vull donar</a>
+    </div>
+  </section>
+
+  <main id="que-es" class="container">
+    <h2>Com funciona Santa Rita?</h2>
+    <p class="muted">Associació sense ànim de lucre a Sabadell.</p>
+
+    <div class="grid-3">
+      <article class="card">
+        <h3>Botiga solidària</h3>
+        <p>Venem a preus accessibles. Els beneficis sostenen el projecte i generen ocupació inclusiva.</p>
+      </article>
+      <article class="card">
+        <h3>Tallers</h3>
+        <p>Espais de reparació, upcycling i projectes creatius per a tots els públics. Programa d’art i inclusió.</p>
+      </article>
+      <article class="card">
+        <h3>Redonacions</h3>
+        <p>Col·laborem amb entitats per fer arribar productes bàsics a qui més ho necessita.</p>
+      </article>
+    </div>
+  </main>
+
+  <section id="donacions" class="cta">
+    <div class="container">
+      <h2>Donacions</h2>
+      <p>
+        Cada objecte que entra a Santa Rita té un impacte ambiental i social: allarga la vida de les coses i evita residus.
+        Si tens coses que no vols o no fas servir, guarda-les a casa o escriu-nos per DM. Aviat començarem a rebre donacions!
+      </p>
+      <div class="cta-actions">
+        <a class="btn" href="mailto:hola@santarita.cat">Escriu-nos</a>
+        <a class="btn btn-outline" href="https://instagram.com/santaritasbd" target="_blank" rel="noopener">Instagram @santaritasbd</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacte" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Contacte</h4>
+        <ul>
+          <li><a href="mailto:hola@santarita.cat">hola@santarita.cat</a></li>
+          <li><a href="https://santarita.cat" target="_blank" rel="noopener">santarita.cat</a></li>
+          <li><a href="https://instagram.com/santaritasbd" target="_blank" rel="noopener">@santaritasbd</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Transparència</h4>
+        <p>Projecte comunitari de reutilització i cultura. Sabadell.</p>
+      </div>
+    </div>
+    <p class="legal">© <span id="year"></span> Santa Rita · Associació sense ànim de lucre.</p>
+  </footer>
+
+  <script>
+    // any actual al peu
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
